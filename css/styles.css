@@ -1,3 +1,28 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+ul,
+ol {
+   padding-left: 0;
+   margin: 0;
+}
+
 :root {
 --header-background-color:#FFFFFF;
 --logo-color-1:#2196F3;
@@ -28,18 +53,18 @@
 --active-navigation-button-background-color:#2196F3;
 --navigation-project-text-color:#757575;
 --navigation-project-title-color:#212121;
-
-
-
 } 
- 
+
 body {
+   margin: 0;
    font-family: 'Roboto', sans-serif;
 } 
  
 /* убираем точки списков */
 .list {
    list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 /* убираем подчеркивание списков */
@@ -47,6 +72,12 @@ body {
    text-decoration: none;
 }
 
+.container {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
 
  /* Шапка сайта */
  /* Фон класс header */
@@ -54,6 +85,9 @@ body {
 .header{
    background-color: var(--header-background-color);
 }
+
+
+
 
 /* WebStudio logo */
 .logo {
@@ -123,7 +157,8 @@ body {
  /*-- Герой--*/
 /* Фон класс hero */
 .hero {
-    background-color: var(--hero-background-color);
+
+   background-color: var(--hero-background-color);
 }
 
 .title-hero {
